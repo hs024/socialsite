@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: azure;
+}
+body{
+    background-color: rgba(44, 108, 204, 0.251);
+}
+nav {
+    display: flex;
+    position: fixed;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    width: 97vw;
+    margin: 1vw;
+    height: 6vh;
+    color: aliceblue;
+    background: linear-gradient(to right, black, rgba(10, 9, 12, 0.821), rgba(27, 17, 48, 0.821), rgba(12, 3, 32, 0.821), rgba(9, 1, 28, 0.721), rgba(12, 1, 37, 0.556));
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 3vw;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.5s linear;
+}
+
+nav ul li:hover {
+    color: aqua;
+    animation: pushup 1s 1s alternate infinite;
+}
+
+nav ul :first-child {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-right: 10vw;
+    animation: pushup 1s 2s alternate-reverse infinite;
+}
+
+nav ul .lastli {
+    margin-left: 40vw;
+    margin-right: 2px;
+}
+@keyframes pushup {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-3px);
+    }
+}
+nav ul img {
+    margin-left: 0;
+    width: 3vw;
+    border-radius: 50%;
+}
+.hamburger{
+    display: none;
+}
+.mediadisplay{
+    display: none;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10vw;
+    /* margin-top: 30vh; */
+    padding-top: 10vh;
+}
+.box{
+    width: 40vw;
+    height:78vh;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+.profilename{
+    border: 2px solid red;
+    height:8vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+
+}
+.profilename img{
+    margin: 2px;
+    height: 6vh;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+}
+.content{
+    border: 2px solid red;
+    height:64vh;
+
+}
+.options{
+    border: 2px solid red;
+height:6vh;
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-direction: row;
+}
+.options button{
+    color: pink;
+    height: 4vh;
+    padding: 3px;
+    background: lightskyblue;
+    font-weight: 600;
+    
+}
+.moreinfo{
+    font-weight: 600;
+    color: pink;
+
+}
+/* Media Query for screens less than 800px */
+@media screen and (max-width: 800px) {
+    nav {
+        width: 100%;
+    }
+    .mediadisplay{
+        margin: 3vw;
+    background-color: transparent;
+    display: contents;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s linear;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-right: 10vw;
+    animation: pushup 1s 2s alternate-reverse infinite;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        background: linear-gradient(to right, black, rgba(10, 9, 12, 0.821), rgba(27, 17, 48, 0.821), rgba(12, 3, 32, 0.821), rgba(9, 1, 28, 0.721), rgba(12, 1, 37, 0.556));
+        z-index: 999;
+    }
+    nav ul :first-child {
+        display: none;
+    }
+    nav ul.active {
+        display: flex; 
+    }
+    
+    nav ul li {
+        margin: 20px;
+    }
+    nav ul img{
+        margin-left: 10px;
+    width: 4vh;
+    border-radius: 50%;
+    }
+    nav ul .lastli {
+        margin-left: 20px;
+        margin-right: 2px;
+    }
+    
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+  
+.icon .line1 {
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon .line2 {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.icon .line3 {
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Cross Icon */
+.cross .line1 {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.cross .line2 {
+    opacity: 0;
+}
+
+.cross .line3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vh;
+    /* margin-top: 30vh; */
+    padding-top: 10vh;
+}
+.box{
+    width: 80vw;
+    height:70vh;
+    
+}
+}

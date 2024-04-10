@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Tac+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color:aliceblue; */
+    font-family:  "Tac One", sans-serif;;
+}
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("back.webp");
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 97vw;
+    height: 6vh;
+    border: 2px solid rgba(16, 24, 178, 0.948);
+    border-radius: 20px;
+    /* background-color: aqua; */
+    background: linear-gradient(to right, #2c3e50,#1a3857, #2a6c98,#3498db); 
+    margin: 1vw;
+    position: fixed;
+}
+#logo{
+    margin: 2vw;
+    width: 20vw;
+    font-weight: 800;
+    font-size: 2rem;
+    background-color: transparent;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 2vw;
+    width: 30vw;
+    background-color: transparent;
+}
+nav ul li{
+    list-style-type: none;
+    background-color: transparent;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color:black;
+    background-color: transparent;
+    transition: all 1s linear;
+}
+nav ul li a:hover{
+    color: rgb(129, 3, 254);
+    font-size: 1.5rem;
+}
+#login{
+    margin: 2vw;
+    
+    font-weight: 600;
+    font-size: 1.7rem;
+    width: 10vw;
+    margin-left: 2px;
+    background-color: transparent;
+    transition: all 0.3s linear;
+}
+#login:hover{
+    /* color: rgb(129, 3, 254); */
+    font-size: 1.9rem;
+}
+nav img{
+    margin: 2px;
+    margin-left: 25vw;
+    height: 6vh;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    background-color: transparent;
+    
+}
+
+/* 
+main{
+    padding-top: 30vh;
+    padding: 5vw;
+} */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10vw;
+    /* margin-top: 30vh; */
+    padding-top: 15vh;
+}
+.box{
+    width: 40vw;
+    height:78vh;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+.profilename{
+    border: 2px solid red;
+    height:8vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+
+}
+.profilename img{
+    margin: 2px;
+    height: 6vh;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+}
+.content{
+    border: 2px solid red;
+    height:64vh;
+
+}
+.options{
+    border: 2px solid red;
+height:6vh;
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-direction: row;
+}
+.options button{
+    color: pink;
+    height: 4vh;
+    padding: 3px;
+    background: lightskyblue;
+    font-weight: 600;
+    
+}
+.moreinfo{
+    font-weight: 600;
+    color: pink;
+
+}
